@@ -20,6 +20,11 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+@media (min-width: 680px) {
+  .content {
+    padding: 4rem 0;
+  }
+}
 .content .recipe {
   width: 100%;
   max-width: 740px;
@@ -29,6 +34,12 @@ body {
   gap: 2rem;
   background-color: hsl(0deg, 0%, 100%);
 }
+@media (min-width: 680px) {
+  .content .recipe {
+    margin: 0 auto;
+    padding: 4rem;
+  }
+}
 .content .recipe__fig {
   width: 100%;
 }
@@ -36,8 +47,18 @@ body {
   width: 100%;
   max-width: 660px;
 }
+@media (min-width: 680px) {
+  .content .recipe__fig .recipe__omelette {
+    border-radius: 1rem;
+  }
+}
 .content .recipe .recipe__introduction {
   padding: 2rem;
+}
+@media (min-width: 680px) {
+  .content .recipe .recipe__introduction {
+    padding: 2rem 0;
+  }
 }
 .content .recipe .recipe__introduction .recipe__title {
   font-size: 4rem;
@@ -92,6 +113,17 @@ body {
   bottom: 0;
   left: 5%;
 }
+@media (min-width: 680px) {
+  .content .recipe .recipe__ingredients::after {
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 680px) {
+  .content .recipe .recipe__ingredients {
+    padding: 2rem 0;
+  }
+}
 .content .recipe .recipe__ingredients .ingredientTitle {
   font-size: 2.5rem;
   color: hsl(14deg, 45%, 36%);
@@ -116,6 +148,17 @@ body {
   position: absolute;
   bottom: 0;
   left: 5%;
+}
+@media (min-width: 680px) {
+  .content .recipe .recipe__instructions::after {
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 680px) {
+  .content .recipe .recipe__instructions {
+    padding: 2rem 0;
+  }
 }
 .content .recipe .recipe__instructions .instructionTitle {
   font-size: 2.5rem;
@@ -142,6 +185,11 @@ body {
 }
 .content .recipe .recipe__nutrition {
   padding: 2rem;
+}
+@media (min-width: 680px) {
+  .content .recipe .recipe__nutrition {
+    padding: 2rem 0;
+  }
 }
 .content .recipe .recipe__nutrition .nutritionTitle {
   font-size: 2.5rem;
@@ -190,7 +238,8 @@ body {
 .content .recipe .recipe__nutrition .nutritionTable .row .value {
   flex: 1;
   color: hsl(14deg, 45%, 36%);
-  font-weight: 400;
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

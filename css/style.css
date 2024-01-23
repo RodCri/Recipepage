@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Young Serif", serif;
+  font-size: 1.6rem;
+}
+
+.content {
+  background-color: hsl(30deg, 54%, 90%);
+  width: 100%;
+  min-height: 100dvh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.content .recipe {
+  width: 100%;
+  max-width: 740px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.content .recipe__fig {
+  width: 100%;
+}
+.content .recipe__fig .recipe__omelette {
+  width: 100%;
+  max-width: 660px;
+}
+.content .recipe .recipe__introduction {
+  padding: 2rem;
+}
+.content .recipe .recipe__introduction .recipe__title {
+  font-size: 4rem;
+  color: hsl(24deg, 5%, 18%);
+  word-wrap: break-word;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+.content .recipe .recipe__introduction .recipe__info {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30deg, 10%, 34%);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+.content .recipe .recipe__time {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: hsl(330deg, 100%, 98%);
+  font-family: "Outfit", sans-serif;
+}
+.content .recipe .recipe__time .recipe__preparation {
+  color: hsl(332deg, 51%, 32%);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.content .recipe .recipe__time .timeItem {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30deg, 10%, 34%);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-left: 2rem;
+}
+.content .recipe .recipe__time .timeItem span {
+  font-weight: 600;
+}
+.content .recipe .recipe__ingredients {
+  padding: 2rem;
+  position: relative;
+}
+.content .recipe .recipe__ingredients::after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: hsl(30deg, 18%, 87%);
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+.content .recipe .recipe__ingredients .ingredientTitle {
+  font-size: 2.5rem;
+  color: hsl(14deg, 45%, 36%);
+  margin-bottom: 2rem;
+}
+.content .recipe .recipe__ingredients .ingredient {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30deg, 10%, 34%);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.content .recipe .recipe__instructions {
+  padding: 2rem;
+  position: relative;
+}
+.content .recipe .recipe__instructions::after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: hsl(30deg, 18%, 87%);
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+.content .recipe .recipe__instructions .instructionTitle {
+  font-size: 2.5rem;
+  color: hsl(14deg, 45%, 36%);
+  margin-bottom: 2rem;
+}
+.content .recipe .recipe__instructions .instruction {
+  list-style-type: decimal;
+  font-family: "Outfit", sans-serif;
+  color: hsl(30deg, 10%, 34%);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.content .recipe .recipe__instructions .instruction .instructionItem {
+  margin: 0 0 1rem 2rem;
+  color: hsl(30deg, 10%, 34%);
+}
+.content .recipe .recipe__instructions .instruction .instructionItem::marker {
+  color: hsl(14deg, 45%, 36%);
+  font-weight: 600;
+}
+.content .recipe .recipe__instructions .instruction .instructionItem span {
+  font-weight: 600;
+}
+.content .recipe .recipe__nutrition {
+  padding: 2rem;
+}
+.content .recipe .recipe__nutrition .nutritionTitle {
+  font-size: 2.5rem;
+  color: hsl(14deg, 45%, 36%);
+  margin-bottom: 2rem;
+}
+.content .recipe .recipe__nutrition .nutritionInfo {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30deg, 10%, 34%);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.content .recipe .recipe__nutrition .nutritionTable {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.content .recipe .recipe__nutrition .nutritionTable .row {
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 1rem 2rem;
+}
+.content .recipe .recipe__nutrition .nutritionTable .row::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: hsl(30deg, 18%, 87%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.content .recipe .recipe__nutrition .nutritionTable .row:last-child::after {
+  height: 0;
+}
+.content .recipe .recipe__nutrition .nutritionTable .row .name {
+  flex: 1;
+  font-family: "Outfit", sans-serif;
+  color: hsl(30deg, 10%, 34%);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.content .recipe .recipe__nutrition .nutritionTable .row .value {
+  flex: 1;
+  color: hsl(14deg, 45%, 36%);
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */

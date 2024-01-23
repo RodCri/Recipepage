@@ -18,6 +18,9 @@ body{
   min-height: 100dvh;
   max-width: 1440px;
   margin: 0 auto;
+  @media(min-width:680px){
+    padding: 4rem 0;
+  }
   .recipe{
     width: 100%;
     max-width: 740px;
@@ -26,15 +29,25 @@ body{
     flex-direction: column;
     gap: 2rem;
     background-color: v.$white;
+    @media(min-width:680px){
+      margin: 0 auto;
+      padding: 4rem;
+    }
     &__fig{
       width: 100%;
       .recipe__omelette{
         width: 100%;
         max-width: 660px;
+        @media(min-width:680px){
+          border-radius: 1rem;
+        }
       }
     }
     .recipe__introduction{
       padding: 2rem;
+      @media(min-width:680px){
+        padding: 2rem 0;
+      }
       .recipe__title{
         font-size: 4rem;
         color: v.$dark-charcoal;
@@ -72,6 +85,9 @@ body{
     }
     .recipe__ingredients{
       @include m.lineBottom;
+      @media(min-width:680px){
+        padding: 2rem 0;
+      }
       .ingredientTitle{
         @include m.sectionTitle;
       }
@@ -82,6 +98,9 @@ body{
     }
     .recipe__instructions{
       @include m.lineBottom;
+      @media(min-width:680px){
+        padding: 2rem 0;
+      }
       .instructionTitle{
         @include m.sectionTitle;
       }
@@ -103,6 +122,9 @@ body{
     }
     .recipe__nutrition{
       padding: 2rem;
+      @media(min-width:680px){
+        padding: 2rem 0;
+      }
       .nutritionTitle{
         @include m.sectionTitle;
       }
@@ -127,7 +149,8 @@ body{
           .value{
             flex: 1;
             color: v.$nutmeg;
-            font-weight: 400;
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
           }
         }
       }
